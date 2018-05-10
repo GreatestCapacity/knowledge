@@ -1,0 +1,8 @@
+QTreeWidget {
+    font-size: 15px;
+}
+
+QTreeWidget::item {
+    margin: 5px;
+    background-clip: margin;
+}
