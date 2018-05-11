@@ -13,6 +13,7 @@ class MarkdownView(QWebView):
         self.data_access = DataAccess(engine)
 
         self.load(QUrl.fromLocalFile(os.getcwd() + '/desktop_mode/index.html'))
+        self.settings().setUserStyleSheetUrl(QUrl.fromLocalFile(os.getcwd() + '/lib/web/bootstrap/css/bootstrap.min.css'))
 
     def show_default_page(self):
         self.load(QUrl.fromLocalFile(os.getcwd() + '/desktop_mode/index.html'))
